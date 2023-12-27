@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script>
+        function validateLogin() {
+            alert("Logged in successfully!");
+            return false;
+        }
+    </script>
+</head>
+<body bgcolor= "pink">
+    <h2>Login</h2>
+    <form onsubmit="return validateLogin()">
+        <!-- Login form elements -->
+        Mobile Number: <input type="text" name="mobileNumber" pattern="[7-9][0-9]{9}" required><br>
+        Age: <input type="number" name="age" min="13" required><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" required><br>
+        <input type="submit" value="Login" bgcolor= "pink"><br>
+        <a href="forgotpassword.html" target="rightFrame" >forgotpassword</a><br>
+        <a href="registration.html" target="rightFrame">Sign Up</a><br>
+    </form>
+</body>
+</html>
